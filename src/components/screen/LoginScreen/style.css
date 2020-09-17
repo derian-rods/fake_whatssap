@@ -1,0 +1,55 @@
+.login{
+    background: rgb(59, 67, 73);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.login__brand{
+    display: flex;
+    justify-content: center;
+    width: 16rem;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.login__title{
+    margin: auto;
+    font-size: 2.5rem;
+    background: linear-gradient(to left, #ef32d9, #89fffd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    padding: 1em 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.login__img{
+    width:100%;
+    filter: drop-shadow( 0 0 10px rgb(8, 59, 226));
+    animation: sping3d 3s linear;
+}
+.login__img:hover{
+   animation: sping3d 5s 7s ease infinite;
+}
+
+.login__btn{
+    border-radius: 30px;
+    font-size: large;
+    padding: .5em 1em;
+    background: #ffffff;
+    font-weight: bolder;
+}
+.fa-google{
+    margin: auto;
+    background: linear-gradient(180deg, #4081EC 23.44%, #E34133 58.33%, rgba(243, 182, 5, 0.76) 79.17%, rgba(50, 163, 80, 0.89) 97.4%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+ @keyframes sping3d {
+     from {
+         transform: rotateY(0deg);
+     }
+     to{
+         transform: rotateY(360deg);
+     }
+ }
