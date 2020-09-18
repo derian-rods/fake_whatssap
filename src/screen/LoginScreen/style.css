@@ -39,7 +39,7 @@
     background:#62E1FB;
     font-weight: bolder;
     outline: none;
-    box-shadow:  0 5px 2px rgba(3, 3, 3, 0.342);
+    box-shadow:  0 7px 4px #0bbee2;
 }
 .login__btn:hover{
     background: rgb(198, 238, 245);

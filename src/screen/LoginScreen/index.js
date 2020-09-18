@@ -3,7 +3,7 @@ import './style.css'
 export const LoginScreen = ({history}) => {
     
     const handleLogin = () => {
-        history.replace('/home')
+        history.replace('/')
     }
     
     return (

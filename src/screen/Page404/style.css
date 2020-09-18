@@ -1,0 +1,77 @@
+.error{
+    background:#FAFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.error__body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.error__title{
+    font-size: x-large;
+}
+.error__header{
+    text-align: center;
+    padding: 1em 2em;
+}
+.error__paragraph{
+    font-size: large;
+}
+.error__btn{
+    margin: auto;
+    width: max-content;
+    border-radius: 30px;
+    font-size: large;
+    border: 2px solid #62E1FB;
+    padding: .5em 1em;
+    color: white;
+    background:#62E1FB;
+    font-weight: bolder;
+    outline: none;
+    box-shadow:  0 7px 4px #0bbee2;
+}
+.error__btn:hover{
+    background: rgb(198, 238, 245);
+    border: 2px solid rgb(198, 238, 245);
+    color: white;
+}
+.fa-hand-point-right{
+    margin-left: .5rem;
+}
+svg{
+    width: 60%;
+    filter: drop-shadow( 0 2px 3px#62E1FB);
+}
+
+.errorbg1, .errorbg2{
+    animation: bgchange 2s ease-in;
+}
+.error1{
+    animation: fadein 3s 1.5s linear infinite;
+}
+.error2{
+    animation: fadein 3s 2s linear infinite;
+}
+.error3{
+    animation: fadein 3s 3s linear infinite;
+}
+@keyframes bgchange {
+    from {
+        fill:#ffffff;
+    }
+    to{
+        fill: red;
+    }
+}
+ @keyframes fadein {
+     from{
+         opacity: 100%;
+     }
+     to{
+         opacity: 0;
+     }
+ }
