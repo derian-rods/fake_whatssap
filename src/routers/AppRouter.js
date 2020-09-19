@@ -9,19 +9,17 @@ import { LoginScreen } from '../screen/LoginScreen';
 import { MainScreen } from '../screen/MainScreen';
 
 
-  export const AppRouter = ({history}) => {
+  export const AppRouter = () => {
     return (
         <Router>
-
-        {/* Drawer */}
-        <>
+        <div>
         <Switch>
           <Route exact path="/login" component={LoginScreen} />
           <Route exact path="/" component={MainScreen} />
           <Route exact path="/404" component={Page404} />
           <Redirect to='/404'/>
         </Switch>           
-        </>
+        </div>
         </Router>
     )
 }

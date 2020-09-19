@@ -42,9 +42,9 @@
 .fa-hand-point-right{
     margin-left: .5rem;
 }
-svg{
+#error__svg{
     width: 60%;
-    filter: drop-shadow( 0 2px 3px#62E1FB);
+    filter: drop-shadow( 0 2px 3px#00d5ff);
 }
 
 .errorbg1, .errorbg2{

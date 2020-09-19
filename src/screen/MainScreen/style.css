@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(238, 237, 237);
+    background: rgb(255, 255, 255);
     height: 100vh;
 }
 .app__body{
@@ -11,14 +11,11 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.685);
-    border: 2px red solid;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.685);
 }
 .app__drawer{
     width: 30%;
-    border: 1px solid yellow;
 }
 .app__chat{
-    border: 1px solid blue;
     width: 70%;
 }

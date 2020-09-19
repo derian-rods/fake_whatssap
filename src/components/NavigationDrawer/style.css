@@ -1,0 +1,81 @@
+.toolbar{
+    background: #eeebeb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 2px #000;
+
+}
+.avatar__thumbnails{
+    width: 3rem;
+    padding: .5em;
+}
+.avatar{
+    width: 100%;
+    border-radius: 50%;
+    margin-left: .3em;
+    outline: none;
+    filter: drop-shadow( 0 0 1px rgba(5, 5, 5, 0.582));
+}
+.icon__menu{
+    margin-right: .5em;
+}
+.icon__messange{
+    margin-right: .5em;
+}
+.drawer__form{
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    background: #fdfbfb;
+}
+
+input[type=text]{
+
+    border-radius: 30px;
+    width: 23em;
+    border: 1px solid rgb(233, 233, 233);
+    padding:.5em;
+    padding-left: 2.4em;
+}
+.input__group{
+    background: url('https://www.flaticon.com/svg/static/icons/svg/565/565590.svg') white no-repeat;
+    background-size: 1.2em;
+    background-position: 2%;
+}
+.drawer__ul{
+    list-style: none;
+    padding: 0;
+}
+.drawer__li{
+box-shadow: 0 0 1px rgba(0, 0, 0, 0.479);
+}
+.drawer__li:active,.drawer__li:hover{
+    background: #e9e7e7;
+}
+.drawer__chat{
+    display: flex;
+    justify-content: space-around;
+    padding: .5em;
+}
+.list__thumbnails{
+    width: 3em;
+    margin-left: -6em;
+}
+.list__body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-left: -12em;
+}
+.chat__title{
+    font-weight: bold;
+    align-self: flex-start;
+}
+.chat__menssage{
+    padding-top: .5em;
+    font-size: small;
+}
+.chat__date{
+    margin-right: -6em;
+}

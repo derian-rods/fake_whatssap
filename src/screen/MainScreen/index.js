@@ -1,4 +1,6 @@
 import React from 'react';
+import { Chat } from '../../components/ChatContainer';
+import { NavigationDrawer } from '../../components/NavigationDrawer';
 import './style.css'
 
 export const MainScreen = () => {
@@ -6,10 +8,10 @@ export const MainScreen = () => {
         <div className="app">
            <div className="app__body">
                 <div className="app__drawer">
-                    <h2>Dreawer</h2>
+                    <NavigationDrawer />
                 </div>
                 <div className="app__chat">
-                    <h2> chat</h2>
+                    <Chat />
                 </div>
            </div>
         </div>
