@@ -1,7 +1,7 @@
 import React from 'react';
 import { Chat } from '../../components/ChatContainer';
 import { NavigationDrawer } from '../../components/NavigationDrawer';
-import './style.css'
+import './style.css';
 
 export const MainScreen = () => {
     return (

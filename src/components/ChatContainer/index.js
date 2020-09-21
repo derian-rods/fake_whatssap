@@ -44,7 +44,7 @@ export const Chat = () => {
                     <input  type="text" placeholder="Type a message"/>
                 </div>
                 <div className="mic">
-                    <i class="fas fa-microphone"></i>
+                    <i className="fas fa-microphone"></i>
                 </div>
             </div>
         </div>

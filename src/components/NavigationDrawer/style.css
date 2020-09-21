@@ -17,10 +17,12 @@
     outline: none;
     filter: drop-shadow( 0 0 1px rgba(5, 5, 5, 0.582));
 }
-.icon__menu{
+.icon__logout{
+    font-size: x-large;
     margin-right: .5em;
 }
 .icon__messange{
+    font-size: x-large;
     margin-right: .5em;
 }
 .drawer__form{
@@ -31,12 +33,15 @@
 }
 
 input[type=text]{
-
+    outline: none;
     border-radius: 30px;
     width: 23em;
     border: 1px solid rgb(233, 233, 233);
     padding:.5em;
     padding-left: 2.4em;
+}
+input:focus{
+    box-shadow: 0 0 10px #66e8ff;
 }
 .input__group{
     background: url('https://www.flaticon.com/svg/static/icons/svg/565/565590.svg') white no-repeat;
@@ -48,7 +53,7 @@ input[type=text]{
     padding: 0;
 }
 .drawer__li{
-box-shadow: 0 0 1px rgba(0, 0, 0, 0.479);
+box-shadow:  0 0 1px rgba(0, 0, 0, 0.479);
 }
 .drawer__li:active,.drawer__li:hover{
     background: #e9e7e7;

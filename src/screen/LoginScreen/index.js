@@ -1,11 +1,30 @@
-import React from 'react'
-import './style.css'
+import React, { useContext } from 'react';
+import './style.css';
+import {loginWithGoogle} from '../../services/firebase.service'
+import {Types} from '../../types/types'
+import { AuthContext } from '../../auth/AuthContext';
+
 export const LoginScreen = ({history}) => {
     
-    const handleLogin = () => {
-        history.replace('/')
+    const {dispatch} = useContext(AuthContext)
+    const handleLogin = async () => {
+        try {
+            const {user} = await loginWithGoogle();
+            const action = {
+                type: Types.login,
+                payload: {
+                    id: user.uid,
+                    username: user.displayName,
+                    photo: user.photoURL
+                }
+            }
+            dispatch(action);
+            history.replace('/');
+            
+        } catch (error) {
+            console.log(error)
+        }
     }
-    
     return (
         <div className="login">
                 <div className="login__brand">

@@ -23,7 +23,7 @@
 .bubble::before{
     content: '';
     position: absolute;
-    transform: rotate(15deg);
+    transform: rotate(20deg);
     border-right: 3em solid transparent;
     border-left: 1em solid #4ED4F9;
     border-bottom: 1em solid transparent; 
@@ -64,4 +64,5 @@
 }
 .chat__input input[type='text']{
     width: 60em;
+    outline: none;
 }

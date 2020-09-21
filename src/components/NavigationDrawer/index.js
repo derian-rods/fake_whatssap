@@ -1,6 +1,21 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { useHistory } from 'react-router-dom'
+import { AuthContext } from '../../auth/AuthContext'
+import {Types} from '../../types/types'
 import './style.css'
 export const NavigationDrawer = () => {
+
+    const {dispatch} = useContext(AuthContext)
+    const history = useHistory();
+
+    const handleLogout = () => {
+        const action = {
+            type: Types.logout,
+        }
+        dispatch(action);
+        history.replace('/login');
+    }
+
     return (
         <div className="drawer">
             <div className="toolbar">
@@ -9,10 +24,10 @@ export const NavigationDrawer = () => {
                 </div>
                 <div className='drawer__icons'>
                     <span className="icon__messange">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M19.005 3.175H4.674C3.642 3.175 3 3.789 3 4.821V21.02l3.544-3.514h12.461c1.033 0 2.064-1.06 2.064-2.093V4.821c-.001-1.032-1.032-1.646-2.064-1.646zm-4.989 9.869H7.041V11.1h6.975v1.944zm3-4H7.041V7.1h9.975v1.944z"></path></svg>
+                    <i className="fas fa-inbox"></i>                  
                     </span>
-                    <span className="icon__menu">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12 7a2 2 0 1 0-.001-4.001A2 2 0 0 0 12 7zm0 2a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 9zm0 6a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 15z"></path></svg>
+                    <span className="icon__logout">
+                        <i type="button" onClick={handleLogout} className="fas fa-sign-out-alt"></i>                    
                     </span>
                 </div>
             </div>
