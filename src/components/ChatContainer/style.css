@@ -9,10 +9,23 @@
     padding: 2em;
     width: 90%;
     height: 76.3%;
-    
+    overflow: hidden;
+}
+
+.avatar__name{
+    font-weight: bold;
+}
+.icon__menu{
+    margin: 1em;
+}
+.icon__menu:hover svg{
+    border-radius: 30px;
+    padding: .1em;
+    background: rgba(102, 102, 102, 0.596);
 }
 .bubble{
     border-radius: 30px;
+    margin-top: 2em;
     background: #4ED4F9;
     align-self: flex-end;
     width: max-content;
@@ -32,6 +45,7 @@
 
 }
 .bubble2{
+    margin-top: 2em;
     margin-left: auto;
     border-radius: 30px;
     background: #8EEBBB;
@@ -55,9 +69,12 @@
     display: flex;
     justify-content: space-around;
     background: #EEEBEB ;
-    padding: 1em;
+    padding: .55em;
     box-shadow: 0 0 1px #000;
     font-size: 1.4rem;
+}
+.chat__footer i:hover{
+    color: #4ED4F9;
 }
 .fa-paperclip{
     margin: 0em 1em;

@@ -22,7 +22,9 @@ export const LoginScreen = ({history}) => {
             history.replace('/');
             
         } catch (error) {
-            console.log(error)
+            console.error({error: error.code,
+                            message: error.message
+                        })
         }
     }
     return (

@@ -7,6 +7,7 @@ export const Chat = () => {
             <div className="toolbar">
                 <div className="avatar__thumbnails">
                     <img className="avatar" src='https://www.flaticon.com/svg/static/icons/svg/828/828785.svg' alt='User Name'></img>
+                    <span className="avatar__name"> DerianRS</span>
                 </div>
                 <div className='drawer__icons'>
                     <span className="icon__messange">

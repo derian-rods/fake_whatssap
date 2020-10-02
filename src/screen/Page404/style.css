@@ -32,6 +32,7 @@
     background:#62E1FB;
     font-weight: bolder;
     outline: none;
+    cursor: pointer;
     box-shadow:  0 7px 4px #0bbee2;
 }
 .error__btn:hover{

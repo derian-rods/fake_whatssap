@@ -5,7 +5,7 @@ import {Types} from '../../types/types'
 import './style.css'
 export const NavigationDrawer = () => {
 
-    const {dispatch} = useContext(AuthContext)
+    const {user, dispatch} = useContext(AuthContext)
     const history = useHistory();
 
     const handleLogout = () => {
@@ -20,9 +20,9 @@ export const NavigationDrawer = () => {
         <div className="drawer">
             <div className="toolbar">
                 <div className="avatar__thumbnails">
-                    <img className="avatar" src='https://images.generated.photos/e2Sv7tkgwoDBW8MG3NaaO0JbFcHk_eempsmYWPqjfbE/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzAxOTMxMzVfMDUx/MjMwOF8wODMyMjIz/LmpwZw.jpg' alt='User Name'></img>
+                    <img className="avatar" src={user.photo} alt={user.username}></img>
                 </div>
-                <div className='drawer__icons'>
+                <div className='drawer__icons' role="button">
                     <span className="icon__messange">
                     <i className="fas fa-inbox"></i>                  
                     </span>
